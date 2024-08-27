@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div>
+    <h1 style="color:#00008B; font-family: verdana;
+  font-size: 300%;background-color:brown; border:2px 2px solid brown"><center>SERVICES</center></h1>
+</div>
+<div class="services">
+<div class="service">
+    <img src="{% static 'images/service2.jpg' %}" alt=service1>
+    <p><strong>KATHAKALI</strong> <br> Makeup & Artistry at 5-6pm,<br> Main Act at 6-7pm.
+     2 hr
+     ₹500</p>
+    <a class="btn btn-danger" href="#" role="button">More Info</a>
+</div>
+    <div class="service">
+            <img src="{% static 'images/class.jpg' %}" alt="Kathakali Service 2">
+            <p><strong>CLASSES</strong><br>  Time:9am to 12  <br> Mon-Sat <br> ₹1000/mnt</p>
+             <a class="btn btn-danger" href="#" role="button">More Info</a>
+        </div>
+        <div class="service">
+            <img src="{% static 'images/ser3.jpg' %}" alt="Kathakali Service 3">
+            <p><strong>Seminars</strong> <br> Every sunday <br> 2pm to 4pm</p>
+           <a class="btn btn-danger" href="#" role="button">More Info</a>
+        </div>
+</div>
+
+
+{% endblock %}

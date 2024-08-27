@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{%  block content %}
+<div class="row">
+  <div class="col">
+<div class="card" style="width: 20rem;">
+  <img src="{% static 'images/entire-kerala.jpg' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">KERALA</h5>
+    <p class="card-text">A TRIP TO KNOW KERALA CULTURE</p>
+    <a href="#" class="btn btn-primary">Lets Know</a>
+  </div>
+</div>
+  </div>
+  <div class="col" >
+ <div class="card" style="width: 20rem;">
+      <img src="{% static 'images/center.jpg' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Kathakali Center</h5>
+    <p class="card-text">Join With Us For 2 Days Enjoying our shows, Foods, Views</p>
+    <a href="#" class="btn btn-primary">For Booking</a>
+  </div>
+</div>
+  </div>
+  <div class="col">
+<div class="card" style="width: 20rem; ">
+  <img src="{% static 'images/class2.jpg' %}"  class="card-img-top" alt="dance">
+  <div class="card-body">
+    <h5 class="card-title">Classes</h5>
+    <p class="card-text">Join Short & Long Term Classes<br>
+    Batch Ways For Boys & Girls<br>
+    Hostel available</p>
+    <a href="#" class="btn btn-primary">Know About</a>
+  </div>
+</div>
+  </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row">
+    {%for b in bok%}
+<div class="col">
+<div class="card" style="width: 18rem;">
+  <img src="{{b.image}}" class="card-img-top" alt="kathakali">
+  <div class="card-body">
+    <h5 class="card-title">{{b.name}}</h5>
+    <p class="card-text">{{b.price}}</p>
+    <p class="card-text">{{b.description}}</p>
+    <a href="#" class="btn btn-primary">Book Now</a>
+  </div>
+</div>
+  </div>
+    {%endfor%}
+    </div>
+{% endblock %}
